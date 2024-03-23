@@ -20,6 +20,11 @@ void main(List<String> args) {
   */
   
   // it isn't industry standard to use var (it's good to mention the data type explicitly)
+  // we can actually throw error wtho analysis_options.yaml regarding specifying the datatypes
+  //      linter:
+  //          rules:
+  //             - always_specify_types
+
   var name2 = 'Anirudh';// dynamically adjusts the datatype
   print(name2);
 
@@ -44,9 +49,16 @@ void main(List<String> args) {
   print("We are Here");
   print(num3);
 
+  // type promotion on what values you assign 
+  final age = 30.0; // double for 30.0 and 30 for int
+  print(age);
 
+
+  /// other datatypes are bool, int, double, character, string, symbol, dynamic etc
 }
 
+
+// called function 
 int getNum() {
   print("get num called");
   return 10;
