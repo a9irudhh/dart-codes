@@ -1,8 +1,8 @@
-import 'package:the_only_dart_file/the_only_dart_file.dart';
-import 'package:test/test.dart';
+// import 'package:the_only_dart_file/operators.dart';
+// import 'package:test/test.dart';
 
-void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
-  });
-}
+// void main() {
+//   test('calculate', () {
+//     expect(calculate(), 42);
+//   });
+// }

@@ -54,7 +54,9 @@ void main(List<String> args) {
   print(age);
 
 
-  /// other datatypes are bool, int, double, character, string, symbol, dynamic etc
+  /// other datatypes are bool, int, num, double, character, string, symbol, dynamic etc
+  const name3 = null; // dynamic datatype
+  print(name3);
 }
 
 
