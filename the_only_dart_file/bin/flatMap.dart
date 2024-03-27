@@ -12,6 +12,8 @@ void main(List<String> args) {
       ) ??
       'Either first or last or both name are null';
   print(fullName);
+
+  
 }
 
 extension Flatmat<T> on T? {
