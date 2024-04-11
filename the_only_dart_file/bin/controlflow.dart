@@ -52,11 +52,15 @@ void main(List<String> args) {
       stdout.write('Thanks for using this application');
       break;
     } else if ((input?.length ?? 0) == 0) {
-      stdout.write('Please enter a valid age');
+      stdout.writeln('Please enter a valid age');
       continue;
     }
 
     final finalAge = int.parse(input!);
+    if(finalAge < 0){
+      stdout.write('Age cannot be negative.');
+      continue;
+    }
 
     switch (finalAge) {
       case (<= 10):
@@ -73,6 +77,29 @@ void main(List<String> args) {
         break;
       default:
         stdout.write('Goated person fr\n');
+        break;
+    }
+  }
+
+
+  // code to appreciate my name
+  while (true) {
+    stdout.writeln('Please Enter name or "exit": ');
+    final input = stdin.readLineSync();
+    if(input == 'exit'){
+      stdout.writeln('Thanks for using this application');
+      break;
+    } else if ((input?.length ?? 0) == 0) {
+      stdout.writeln('Please enter a valid Name');
+      continue;
+    }
+
+    switch(input){
+      case 'Anirudh':
+        stdout.writeln('Hey $input, you got a nice name');
+        break;
+      default:
+        stdout.writeln('Hey $input, your name is mid');
         break;
     }
   }
